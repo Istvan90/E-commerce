@@ -1,0 +1,68 @@
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.fs-10 {
+    font-size: 15px;
+}
+
+.w-15 {
+    width: 15px;
+}
+
+.w-105 {
+    width: 105px;
+}
+
+.FirstRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .FirstRow div {
+    width: 32%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+}
+
+header .FirstRow .left {
+    padding-left: 20px;
+}
+
+header .FirstRow .Center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SecondRow {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.SecondRow ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SecondRow ul li {
+    width: 160px;
+    list-style: none;
+    display: flex;
+    /* Ajoutez cette ligne */
+    align-items: center;
+    /* Ajoutez cette ligne pour centrer verticalement */
+    justify-content: center;
+    /* Ajoutez cette ligne pour centrer horizontalement */
+}
+
+.SecondRow ul li a {
+    text-decoration: none;
+    color: rgb(41, 41, 41);
+}

@@ -1,0 +1,14 @@
+.GarrantiBar ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style-type: none;
+    width: 300px;
+    font-size: 12px;
+}
+
+.GarrantiBar ul {
+    justify-content: center;
+    align-items: center;
+}
