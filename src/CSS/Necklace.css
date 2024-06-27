@@ -1,0 +1,22 @@
+.NecklaceImage {
+    width: 60%;
+    height: auto;
+}
+
+.DetailsNecklace {
+    padding: 0% 0% 0% 5%;
+    flex-direction: column;
+}
+
+.DetailsNecklace h1 {
+    font-size: 50px;
+    font-family: "lateef";
+}
+
+.DetailsNecklace p {
+    font-size: 18px;
+}
+
+.font-lateef {
+    font-family: "lateef";
+}

@@ -1,0 +1,82 @@
+.Card {
+    width: 335px;
+    height: 500px;
+    border: solid 1px black;
+    border-radius: 10px;
+}
+
+.PaginationLeft,
+.PaginationRight {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.PaginationCover {
+    position: relative;
+    height: auto;
+}
+
+.PaginationLeft {
+    left: 10px;
+}
+
+.PaginationRight {
+    right: 10px;
+}
+
+.BlackSquare {
+    border: 1px black solid;
+    width: 225px;
+    height: 225px;
+    margin-left: 55px;
+    margin-top: 10%;
+}
+
+.Defilement {
+    overflow: hidden;
+}
+
+.ThisImage {
+    border-radius: 15px;
+    width: 220px;
+    height: 220px;
+}
+
+.RingDescription {
+    margin: 20px 6% 0% 6%;
+    font-size: 18px;
+}
+
+.AddToPannel {
+    width: 70%;
+    height: 50px;
+    border: none;
+    color: white;
+    background-color: black;
+    margin: 15px 0 15% 15%;
+}
+
+.RingDescription li {
+    margin-top: 20px;
+    list-style: none;
+    font-weight: 500;
+}
+
+.ThePrice {
+    margin-right: 30px;
+}
+
+.Modele {
+    object-fit: cover;
+}
+
+.CardColumn {
+    margin-left: 10px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}

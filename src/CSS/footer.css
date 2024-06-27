@@ -1,0 +1,45 @@
+footer {
+    margin-top: 50px;
+    display: flex;
+    gap: 160px;
+}
+
+.Add {
+    width: 300px;
+}
+
+.Column {
+    width: 190px;
+    margin-left: 44px;
+}
+
+.ColumnTitle {
+    font-family: 'lateef';
+    margin-left: 30px;
+    font-size: 24px;
+    display: flex;
+}
+
+.Footerlist {
+    padding-top: 30px;
+    list-style: none;
+}
+
+.FooterlistP {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.AddElectronique {
+    margin-left: 30px;
+    width: 300px;
+}
+
+.MyInput {
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+}

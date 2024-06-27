@@ -27,7 +27,7 @@ export function GarrantieBar() {
     );
 }
 
-function List({ SourceImage, Width, Heigth, Alt, Value, Key }) {
+function List({ SourceImage, Width, Heigth, Alt, Value }) {
     return (
         <li key={Value}>
             <img src={SourceImage} alt={Alt} width={Width} height={Heigth} />

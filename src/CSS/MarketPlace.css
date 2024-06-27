@@ -1,0 +1,63 @@
+.Article {
+    width: 100%;
+    display: flex;
+    padding: 10% 7% 0 15%;
+    gap: 75px;
+}
+
+.ArticleTitle {
+    width: 40%;
+    margin-top: 4%;
+}
+
+.ImageArticle {
+    width: 40%;
+}
+
+.MarketPlace {
+    margin: 10% 0 0 5%;
+}
+
+.Filtre {
+    display: flex;
+    margin-top: 25px;
+}
+
+.FiltrerPar {
+    color: rgb(94, 94, 94);
+}
+
+.Filtre ul {
+    display: flex;
+    margin-left: 100px;
+}
+
+.Filtre ul li {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    margin-left: 180px;
+}
+
+select {
+    border: none;
+    width: 20px;
+}
+
+option {
+    height: 500px;
+    width: 200px;
+}
+
+.Row {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    margin-top: 5%;
+}
+
+li div {
+    display: flex;
+    align-items: center;
+}

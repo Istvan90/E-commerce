@@ -10,19 +10,21 @@ import RingThree from "../../Image/Bague (Nos Collection)/RingThree.jpg";
 import RingFour from "../../Image/Bague (Nos Collection)/RingFour.jpg";
 import RingFive from "../../Image/Bague (Nos Collection)/RingFive.jpg";
 
+import { CardCollection } from "./CollectionComponents/CollectionCard"
+
 export function Collection() {
     const scrollImages = useRef();
 
     const leftScroll = () => {
         scrollImages.current.scrollBy({
-            left: -50,
+            left: -100,
             behavior: "smooth"
         });
     }
 
     const rightScroll = () => {
         scrollImages.current.scrollBy({
-            left: 50,
+            left: 100,
             behavior: "smooth"
         });
     }
@@ -34,24 +36,17 @@ export function Collection() {
 
             <div className="TheCollection">
                 <img className="ButtonLeft" src={PaginationGauche} alt="Previous" onClick={leftScroll} />
-                <div className="CollectionCard d-flex justify-content-center mt-5" ref={scrollImages}>
-                    <CardCollection Image={RingOne} CollectionName={"Larah"}/>
-                    <CardCollection Image={RingFour} />
-                    <CardCollection Image={RingTwo} />
-                    <CardCollection Image={RingThree} />
-                    <CardCollection Image={RingFive} />
+
+                <div className="Cards d-flex justify-content-center mt-5" ref={scrollImages}>
+                    <CardCollection Image={RingOne} CollectionName={"Larah"} />
+                    <CardCollection Image={RingFour} CollectionName={"Harlequin"}/>
+                    <CardCollection Image={RingTwo} CollectionName={"Milanosa"} />
+                    <CardCollection Image={RingThree} CollectionName={"Dianoh"}/>
+                    <CardCollection Image={RingFive} CollectionName={"Highteen"}/>
                 </div>
+
                 <img className="ButtonRight" src={PaginationDroite} alt="Next" onClick={rightScroll} />
             </div>
-        </div>
-    );
-}
-
-function CardCollection({ Image , CollectionName}) {
-    return (
-        <div className="card-collection">
-            <p className="CollectionName">{CollectionName}</p>
-            <img src={Image} alt="Collection item" className="collection-image" />
         </div>
     );
 }

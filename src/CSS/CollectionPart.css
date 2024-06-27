@@ -9,7 +9,7 @@
     background-color: black;
     margin: 0 auto;
 }
- 
+
 .ButtonLeft,
 .ButtonRight {
     position: absolute;
@@ -37,16 +37,17 @@
     overflow-x: hidden;
 }
 
-.CollectionCard {
+.Cards {
     padding: 40px 0px;
     height: auto;
     display: flex;
     overflow-x: scroll; /* Activez le défilement horizontal */
-    white-space: nowrap; /* Empêchez les éléments de passer à la ligne */
     padding-left: 260px;
+    overflow: hidden;
 }
 
-.card-collection {
+.CardCollection {
+    position: relative; /* Ajoutez cette ligne */
     min-width: 300px;
     height: 446px;
     margin: 2px;
@@ -62,7 +63,18 @@
 
 .CollectionName {
     position: absolute;
+    bottom: 2%; /* Ajustez cette valeur selon vos besoins */
+    left: 65%; /* Ajustez cette valeur selon vos besoins */
     font-family: "lateef";
     color: white;
-    font-size: 15px;
+    font-size: 22px;
+}
+
+.bar {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 30%;
+    height: 4px;
+    bottom: 5%; /* Ajustez cette valeur selon vos besoins */
+    left: 65%; /* Ajustez cette valeur selon vos besoins */
 }

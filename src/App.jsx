@@ -1,14 +1,13 @@
 import { useEffect, useState } from 'react'
-import { Header } from './components/Header/HeaderPart';
-import { GarrantieBar } from './components/Header/Garanti';
-import { Collection } from './components/Collection/CollectionPart';
+
+import { HomePage } from './components/HomePage';
+import { MarketPlace } from './components/MarketPlace';
+import { DetailsProduits } from './components/DetailsProduitsPage';
 
 export default function App() {
   return (
-    <div>
-      <Header />
-      <GarrantieBar />
-      <Collection />
-    </div>
+    <>
+      <HomePage />
+    </>
   );
 }
