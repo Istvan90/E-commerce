@@ -5,7 +5,7 @@ import PaginationGauche from "../../../Image/Icone/paginationVgauche.png";
 
 import "../../../CSS/MarketPlaceCard.css"
 
-export function Card({ Image, FirstDescription, SecondDescription, ThirdDescription, Price }) {
+export function Card({Index, Image, FirstDescription, SecondDescription, ThirdDescription, Price }) {
     const theScrollImages = useRef()
 
     const theLeftScroll = () => {
@@ -25,7 +25,7 @@ export function Card({ Image, FirstDescription, SecondDescription, ThirdDescript
     }
 
     return (
-        <div className="Card">
+        <div className="Card" id={Index}>
             <div className="PaginationCover">
                 <img src={PaginationGauche} alt="PaginationGauche" className="PaginationLeft" onClick={theLeftScroll} />
 
@@ -34,6 +34,7 @@ export function Card({ Image, FirstDescription, SecondDescription, ThirdDescript
                         <img src={Image} className="ThisImage" />
                         <img src={Image} className="ThisImage" />
                         <img src={Image} className="ThisImage" />
+                        
                     </div>
                 </div>
 
@@ -45,7 +46,7 @@ export function Card({ Image, FirstDescription, SecondDescription, ThirdDescript
                 <li>{SecondDescription}</li>
                 <li>{ThirdDescription}</li>
             </ul>
-
+            
             <Button ThePrice={Price} />
         </div>
     );

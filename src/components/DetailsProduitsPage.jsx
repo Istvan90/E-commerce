@@ -1,8 +1,8 @@
 import React from "react";
 
-import { Header } from "./Header/HeaderPart";
+import { Header } from "./GlobalComponent/Header/HeaderPart";
 import { ListeProduits } from "./DetailsProduits/DetailsProduits";
-import { MyFooter } from "./Footer/footer";
+import { MyFooter } from "./GlobalComponent/Footer/footer";
 import { PresentationBystyle } from "./MarketPlace/MarketPlaceComponents/ByStyle";
 
 import ImageOne from "../Image/Dans la Partie vente/tiffany-foreveralliance-16028932_1020727_ED_M.webp"

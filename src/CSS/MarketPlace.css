@@ -50,11 +50,13 @@ option {
     width: 200px;
 }
 
-.Row {
-    display: flex;
-    flex-direction: row;
-    gap: 5%;
-    margin-top: 5%;
+.MyColumn {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: dense;
+    grid-row-gap: 50px;
+    grid-column-gap: 50px;
+    overflow: visible;
 }
 
 li div {

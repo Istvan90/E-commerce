@@ -14,7 +14,14 @@ export function Column({ ColumnName, RowList }) {
                 {
                     RowList.map(
                         Name => (
-                            <li className="Footerlist" key={Name}>{Name}</li>
+                            <li className="Footerlist" key={Name}>
+                                <a href="" className="text-decoration-none" style={
+                                    {
+                                        color: "black"
+                                    }
+                                }
+                                >{Name}</a>
+                            </li>
                         )
                     )
                 }

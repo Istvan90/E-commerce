@@ -1,4 +1,11 @@
-export function CardCollection({ Image , CollectionName}) {
+/**
+ * 
+ * @param {png, jpg, webp,} Image
+ * @param {string} CollectionName
+ * @returns 
+ */
+
+export function CardCollection({ Image, CollectionName }) {
     return (
         <div className="CardCollection">
             <p className="CollectionName">{CollectionName}</p>

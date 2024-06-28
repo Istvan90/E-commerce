@@ -1,9 +1,10 @@
 import { MeetingButton } from "./MeetingButton";
-import logo from "../../../Image/Logo/Logo.png";
-import MadagascarFlag from "../../../Image/Logo/Madagascar.png";
-import Profile from "../../../Image/Icone/UserIcon.png";
-import Bag from "../../../Image/Icone/PanierIcon.png";
-import Cloche from "../../../Image/Icone/Cloche.png";
+
+import logo from "../../../../Image/Logo/Logo.png";
+import MadagascarFlag from "../../../../Image/Logo/Madagascar.png";
+import Profile from "../../../../Image/Icone/UserIcon.png";
+import Bag from "../../../../Image/Icone/PanierIcon.png";
+import Cloche from "../../../../Image/Icone/Cloche.png";
 
 export function FirstRow() {
   return (
@@ -14,20 +15,25 @@ export function FirstRow() {
         <div style={{ paddingLeft: "10px" }}>
           <p className="pt-3" >102 Madagascar</p>
         </div>
+
         <div style={{ width: "15px" }}>
           <p className="pt-3">|</p>
         </div>
+
         <div>
           <p className="pt-3">Service client</p>
         </div>
+
         <div>
           <img src={Cloche} alt="Cloche" width="25px" height="25px" />
         </div>
       </div>
+
       {/*The Center part of Header (Logo)*/}
       <div className="justify-content-center Center">
         <img src={logo} width={"225px"} alt={"Joiallerie Madagascar"} />
       </div>
+      
       {/*The Right part of Header*/}
       <div className="Right">
         <div className="w-50">

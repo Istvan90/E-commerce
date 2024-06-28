@@ -1,5 +1,12 @@
 import React from "react";
 
+/**
+ * 
+ * @param {string} Content
+ * @param {string} <Link></Link>
+ * @returns 
+ */
+
 export function MeetingButton({ Content, Link }) {
     return (
         <a href={Link} style={{ textDecoration: 'none' }}>

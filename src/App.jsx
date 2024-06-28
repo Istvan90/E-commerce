@@ -7,7 +7,7 @@ import { DetailsProduits } from './components/DetailsProduitsPage';
 export default function App() {
   return (
     <>
-      <HomePage />
+      <MarketPlace />
     </>
   );
 }

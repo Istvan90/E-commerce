@@ -25,8 +25,8 @@ function Details() {
             </div>
 
             <div className="d-flex justify-content-center align-items-center flex-column">
-                <p className="font-lateef">Decouvrez la dernière création de M qui a su exprimé</p>
-                <p className="font-lateef">sa créativité à travers le collier Baobab.</p>
+                <p className="font-lateef">Decouvrez la dernière création de Leonardo AI qui a su</p>
+                <p className="font-lateef">exprimé sa créativité à travers le collier Baobab.</p>
             </div>
 
             <LinkRDV Value={"En savoir plus"} Link="{% url 'home' %}" />

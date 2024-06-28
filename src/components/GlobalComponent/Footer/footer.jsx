@@ -1,4 +1,4 @@
-import "../../CSS/footer.css"
+import "../../../CSS/footer.css"
 import { MeetingButton } from "../Header/HeaderComponents/MeetingButton";
 import { Column } from "./FooterComponents/ListsColumn";
 import { MyInput } from "./FooterComponents/TheInput";
