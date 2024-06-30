@@ -19,71 +19,72 @@ import IceBlue from "../../Image/Dans la Partie vente/tiffany-foreveralliance-16
 
 import { MarketPlaceProduct } from "./Product";
 
-let RingToSell = MarketPlaceProduct[0].Image
-
 export function RingMarketPlace() {
     return (
         <div className="body-container">
             <RingDemo Image={MyRing} />
 
-            <div className="MarketPlace">
+            <div className="container container-centered browse-grid-page">
                 <ThisFilterBy />
 
-                <div className="CardList">
+                <div className="mt-5">
                     <div className="MyColumn">
-                        {MarketPlaceProduct.slice(0, 6).map((Product, index) => (
-                            <>
-                                <Card
-                                    Image={Product.Image}
-                                    FirstDescription={Product.FirstDescription}
-                                    SecondDescription={Product.SecondDescription}
-                                    ThirdDescription={Product.ThirdDescription}
-                                    Price={Product.Price}
-                                    Index={index}
-                                />
-                                {(index === 5) && (
-                                    <>
-                                        <div className="CardColumn">
-                                            <Card
-                                                Image={Product.Image}
-                                                FirstDescription={Product.FirstDescription}
-                                                SecondDescription={Product.SecondDescription}
-                                                ThirdDescription={Product.ThirdDescription}
-                                                Price={Product.Price}
-                                                Index={index}
-                                            />
-                                            <Card
-                                                Image={MarketPlaceProduct[index + 1].Image}
-                                                FirstDescription={MarketPlaceProduct[index + 1].FirstDescription}
-                                                SecondDescription={MarketPlaceProduct[index + 1].SecondDescription}
-                                                ThirdDescription={MarketPlaceProduct[index + 1].ThirdDescription}
-                                                Price={MarketPlaceProduct[index + 1].Price}
-                                                index={index}
-                                            />
-                                        </div>
-                                        <img className="Modele" src={PresTophTwo} alt="Modele" />
-                                    </>
-                                )}
-                            </>
-                        ))}
+                        {
+                            MarketPlaceProduct.map((Product, index) => (
+                                <>
+                                    <Card
+                                        Image={Product.Image}
+                                        FirstDescription={Product.FirstDescription}
+                                        SecondDescription={Product.SecondDescription}
+                                        ThirdDescription={Product.ThirdDescription}
+                                        Price={Product.Price}
+                                        Index={index}
+                                    />
+
+                                    {(index % 5 === 0 && index != 0) && (
+                                        <>
+                                            <div className="CardColumn d-flex flex-column">
+                                                <Card
+                                                    Image={Product.Image}
+                                                    FirstDescription={Product.FirstDescription}
+                                                    SecondDescription={Product.SecondDescription}
+                                                    ThirdDescription={Product.ThirdDescription}
+                                                    Price={Product.Price}
+                                                    Index={index}
+                                                />
+
+                                                <Card
+                                                    Image={MarketPlaceProduct[index].Image}
+                                                    FirstDescription={MarketPlaceProduct[index].FirstDescription}
+                                                    SecondDescription={MarketPlaceProduct[index].SecondDescription}
+                                                    ThirdDescription={MarketPlaceProduct[index].ThirdDescription}
+                                                    Price={MarketPlaceProduct[index].Price}
+                                                    index={index}
+                                                />
+                                            </div>
+
+                                            <img className="Modele" src={PresTophTwo} alt="Modele" />
+                                        </>
+                                    )}
+                                </>
+                            ))
+                        }
                     </div>
                 </div>
+                < PresentationBystyle
+                    ImageOne={Alliance}
+                    NameOne={'Alliance'}
+                    ImageTwo={IceBlue}
+                    NameTwo={'Cellini Rings'}
+                    ImageThree={Diamanta}
+                    NameThree={'Diamanta'}
+                    ImageFour={ForMan}
+                    NameFour={'Bijoux pour Homme'}
+                />
 
             </div>
-            <PresentationBystyle
-                ImageOne={Alliance}
-                NameOne={'Alliance'}
-                ImageTwo={IceBlue}
-                NameTwo={'Cellini Rings'}
-                ImageThree={Diamanta}
-                NameThree={'Diamanta'}
-                ImageFour={ForMan}
-                NameFour={'Bijoux pour Homme'}
-            />
-            
+
             <Meeting />
         </div >
-
-
     );
 }

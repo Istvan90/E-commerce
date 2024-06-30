@@ -2,7 +2,7 @@ import React from 'react';
 
 import '../../../CSS/ByStyle.css'
 
-export function PresentationBystyle({Title, ImageOne, NameOne, ImageTwo, NameTwo, ImageThree, NameThree, ImageFour, NameFour }) {
+export function PresentationBystyle({ Title, ImageOne, NameOne, ImageTwo, NameTwo, ImageThree, NameThree, ImageFour, NameFour }) {
     return (
         <div className='CoverListStyle'>
             <h6 className='d-flex align-items-center justify-content-center'>{Title}</h6>
@@ -21,7 +21,11 @@ function List({ Image, Name }) {
     return (
         <li>
             <img src={Image} alt={Name} />
-            <p className="d-flex align-items-center justify-content-center">{Name}</p>
+            <a href={`/${Name}`} className='text-decoration-none'>
+                <p className="d-flex align-items-center justify-content-center">
+                    {Name}
+                </p>
+            </a>
         </li>
     );
 }

@@ -51,23 +51,10 @@
     font-size: 18px;
 }
 
-.AddToPannel {
-    width: 70%;
-    height: 50px;
-    border: none;
-    color: white;
-    background-color: black;
-    margin: 15px 0 15% 15%;
-}
-
 .RingDescription li {
     margin-top: 20px;
     list-style: none;
     font-weight: 500;
-}
-
-.ThePrice {
-    margin-right: 30px;
 }
 
 .Modele {
@@ -82,6 +69,8 @@
 .CardColumn {
     margin-top: 3%;
     gap: 50px;
-    display: flex;
-    flex-direction: column;
+}
+
+.browse-grid-page {
+    margin-top: 10%;
 }

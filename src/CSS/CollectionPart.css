@@ -18,7 +18,8 @@
     width: 15px;
     height: 50px;
     cursor: pointer;
-    z-index: 1; /* Ensure buttons are above the images */
+    z-index: 1;
+    /* Ensure buttons are above the images */
     filter: invert(1);
 }
 
@@ -41,18 +42,21 @@
     padding: 40px 0px;
     height: auto;
     display: flex;
-    overflow-x: scroll; /* Activez le défilement horizontal */
+    overflow-x: scroll;
+    /* Activez le défilement horizontal */
     padding-left: 260px;
     overflow: hidden;
 }
 
 .CardCollection {
-    position: relative; /* Ajoutez cette ligne */
+    position: relative;
+    /* Ajoutez cette ligne */
     min-width: 300px;
     height: 446px;
     margin: 2px;
     overflow: hidden;
-    display: inline-block; /* Permettez aux éléments de s'afficher côte à côte */
+    display: inline-block;
+    /* Permettez aux éléments de s'afficher côte à côte */
 }
 
 .collection-image {
@@ -63,18 +67,11 @@
 
 .CollectionName {
     position: absolute;
-    bottom: 2%; /* Ajustez cette valeur selon vos besoins */
-    left: 65%; /* Ajustez cette valeur selon vos besoins */
+    bottom: 2%;
+    /* Ajustez cette valeur selon vos besoins */
+    left: 65%;
+    /* Ajustez cette valeur selon vos besoins */
     font-family: "lateef";
     color: white;
     font-size: 22px;
-}
-
-.bar {
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    width: 30%;
-    height: 4px;
-    bottom: 5%; /* Ajustez cette valeur selon vos besoins */
-    left: 65%; /* Ajustez cette valeur selon vos besoins */
 }

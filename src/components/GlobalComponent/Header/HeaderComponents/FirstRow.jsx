@@ -25,7 +25,9 @@ export function FirstRow() {
         </div>
 
         <div>
-          <img src={Cloche} alt="Cloche" width="25px" height="25px" />
+          <a href="/service-client">
+            <img src={Cloche} alt="Cloche" width="25px" height="25px" />
+          </a>
         </div>
       </div>
 
@@ -33,7 +35,7 @@ export function FirstRow() {
       <div className="justify-content-center Center">
         <img src={logo} width={"225px"} alt={"Joiallerie Madagascar"} />
       </div>
-      
+
       {/*The Right part of Header*/}
       <div className="Right">
         <div className="w-50">
@@ -43,10 +45,14 @@ export function FirstRow() {
           <p className="mb-0 w-105 fs-10">+20 22 673 75</p>
         </div>
         <div>
-          <img src={Profile} alt="UserIcon" width={"20px"} height={"20px"} />
+          <a href="/user-profile">
+            <img src={Profile} alt="UserIcon" width={"20px"} height={"20px"} />
+          </a>
         </div>
         <div>
-          <img src={Bag} alt="UserIcon" width={"20px"} height={"20px"} />
+          <a href="/user-Bag">
+            <img src={Bag} alt="UserIcon" width={"20px"} height={"20px"} />
+          </a>
         </div>
       </div>
     </div>

@@ -27,12 +27,16 @@ export function SecondRow() {
 export function TheList({ Title, Link }) {
     return (
         <li key={Title}>
-            <a href={'/' + Link} style={
-                {
-                    fontSize: "13px",
-                    textTransform: "uppercase"
+            <a
+                id="style-2"
+                href={'/' + Link}
+                style={
+                    {
+                        fontSize: "13px",
+                        textTransform: "uppercase"
+                    }
                 }
-            }>
+            >
                 {Title}
             </a>
 

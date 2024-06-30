@@ -1,11 +1,13 @@
-import React, { useRef } from "react";
+import React, {useState, useRef } from "react";
+
+import { AddBoutton } from "./AddBoutton";
 
 import PaginationDroite from "../../../Image/Icone/paginationVdroite.png";
 import PaginationGauche from "../../../Image/Icone/paginationVgauche.png";
 
 import "../../../CSS/MarketPlaceCard.css"
 
-export function Card({Index, Image, FirstDescription, SecondDescription, ThirdDescription, Price }) {
+export function Card({ Index, Image, FirstDescription, SecondDescription, ThirdDescription, Price }) {
     const theScrollImages = useRef()
 
     const theLeftScroll = () => {
@@ -34,7 +36,7 @@ export function Card({Index, Image, FirstDescription, SecondDescription, ThirdDe
                         <img src={Image} className="ThisImage" />
                         <img src={Image} className="ThisImage" />
                         <img src={Image} className="ThisImage" />
-                        
+
                     </div>
                 </div>
 
@@ -46,14 +48,8 @@ export function Card({Index, Image, FirstDescription, SecondDescription, ThirdDe
                 <li>{SecondDescription}</li>
                 <li>{ThirdDescription}</li>
             </ul>
-            
-            <Button ThePrice={Price} />
-        </div>
-    );
-}
 
-function Button({ ThePrice }) {
-    return (
-        <button className="d-flex align-items-center justify-content-center pt-3 AddToPannel"><p className="ThePrice">{ThePrice}</p><p>Ajouter au Panier</p> </button>
+            <AddBoutton ThePrice = {Price}/>
+        </div>
     );
 }

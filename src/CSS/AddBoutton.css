@@ -1,0 +1,66 @@
+:root {
+    --primary: #080707;
+    --animation-style: ease-in-out;
+    --buton-text-transition-delay: 250ms;
+}
+
+.button {
+    margin: 20px 15% 0% 15%;
+    width: 70%;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    cursor: pointer;
+    letter-spacing: 2px;
+    z-index: 1;
+    overflow: hidden;
+    border: none;
+    background: var(--primary);
+    color: white;
+
+    transition: ease-in-out 0.5s;
+
+}
+
+.not-checked {
+    &:after {
+        content: attr(data-content);
+        position: absolute;
+        transform: translate(-100%, -50%);
+        left: 0;
+        right: 0;
+        z-index: -1;
+        top: 50%;
+        bottom: 0;
+        opacity: 0;
+
+        transition: ease 500ms;
+    }
+
+    &:hover {
+        background-color: white;
+        color: var(--primary);
+        border: 1px solid var(--primary);
+    }
+}
+
+.checked {
+    &:after {
+        content: attr(data-content);
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        top: 50%;
+        bottom: 0;
+        transform: translate(0%, -50%);
+        transition: all var(--animation-style) 1000ms;
+        opacity: 1;
+    }
+
+    .button-text {
+        opacity: 0;
+        transform: translate(0%, -50%);
+        transition: all var(--animation-style) 1000ms;
+    }
+}
