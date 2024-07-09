@@ -54,7 +54,9 @@ export function Collection() {
 
     return (
         <div className="Cover mt-5">
-            <h1 className="Title d-flex justify-content-center align-items-center">COLLECTION</h1>
+            <h1 className="Title d-flex justify-content-center align-items-center">
+                COLLECTION
+            </h1>
 
             <div className="TheCollection">
                 <img className="ButtonLeft" src={PaginationGauche} alt="Previous" onClick={leftScroll} />

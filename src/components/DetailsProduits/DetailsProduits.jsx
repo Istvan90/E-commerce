@@ -8,7 +8,7 @@ import "../../CSS/DetailsProduits.css"
 export function ListeProduits() {
     return (
         <>
-            <div className="cover">
+            <div className="cover gap-20">
                 <Images Front={RingUp} Right={RingDown} Left={RingCoteLeft} Up={RingCoteRight} />
                 
                 <Details
@@ -23,7 +23,7 @@ export function ListeProduits() {
 
 function Images({ Front, Up, Left, Right }) {
     return (
-        <div className="Images">
+        <div className="d-flex flex-wrap Images">
             <img src={Front} alt={"Front"} />
             <img src={Left} alt={"Left"} />
             <img src={Up} alt={"Up"} />

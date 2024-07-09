@@ -12,4 +12,4 @@ export function CardCollection({ Image, CollectionName }) {
             <img src={Image} alt="Collection item" className="collection-image" />
         </div>
     );
-}
+}  

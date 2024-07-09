@@ -15,7 +15,7 @@ export function SecondRow() {
                 {
                     List.map(
                         List => (
-                            <TheList Title={List} Link={List} />
+                            <TheList Title={List} />
                         )
                     )
                 }
@@ -24,12 +24,12 @@ export function SecondRow() {
     );
 }
 
-export function TheList({ Title, Link }) {
+export function TheList({ Title }) {
     return (
         <li key={Title}>
             <a
+                href="/market-place"
                 id="style-2"
-                href={'/' + Link}
                 style={
                     {
                         fontSize: "13px",
@@ -39,7 +39,6 @@ export function TheList({ Title, Link }) {
             >
                 {Title}
             </a>
-
             <hr />
         </li>
     );
