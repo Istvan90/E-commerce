@@ -33,6 +33,8 @@ export function RingMarketPlace() {
                             MarketPlaceProduct.map((Product, index) => (
                                 <>
                                     <Card
+                                        key={Product.id}
+                                        product={Product}
                                         Image={Product.Image}
                                         FirstDescription={Product.FirstDescription}
                                         SecondDescription={Product.SecondDescription}
@@ -40,32 +42,6 @@ export function RingMarketPlace() {
                                         Price={Product.Price}
                                         Index={index}
                                     />
-
-                                    {(index % 5 === 0 && index != 0) && (
-                                        <>
-                                            <div className="CardColumn d-flex flex-column">
-                                                <Card
-                                                    Image={Product.Image}
-                                                    FirstDescription={Product.FirstDescription}
-                                                    SecondDescription={Product.SecondDescription}
-                                                    ThirdDescription={Product.ThirdDescription}
-                                                    Price={Product.Price}
-                                                    Index={index}
-                                                />
-
-                                                <Card
-                                                    Image={MarketPlaceProduct[index].Image}
-                                                    FirstDescription={MarketPlaceProduct[index].FirstDescription}
-                                                    SecondDescription={MarketPlaceProduct[index].SecondDescription}
-                                                    ThirdDescription={MarketPlaceProduct[index].ThirdDescription}
-                                                    Price={MarketPlaceProduct[index].Price}
-                                                    index={index}
-                                                />
-                                            </div>
-
-                                            <img className="Modele" src={PresTophTwo} alt="Modele" />
-                                        </>
-                                    )}
                                 </>
                             ))
                         }

@@ -33,14 +33,14 @@ export function Meeting() {
 export function LinkRDV({ Value }) {
     return (
         <div className="Meet">
-            <a href="/prendre-rdv" className="text-decoration-none"
+            <Link to="/prendre-rdv" className="text-decoration-none"
                 style={
                     {
                         fontSize: "17px"
                     }
                 }>
                 {Value}
-            </a>
+            </Link>
         </div>
     );
 }

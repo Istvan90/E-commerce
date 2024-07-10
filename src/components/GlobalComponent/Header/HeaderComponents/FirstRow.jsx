@@ -1,4 +1,6 @@
 import { MeetingButton } from "./MeetingButton";
+import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 import logo from "../../../../Image/Logo/Logo.png";
 import MadagascarFlag from "../../../../Image/Logo/Madagascar.png";
@@ -7,6 +9,13 @@ import Bag from "../../../../Image/Icone/PanierIcon.png";
 import Cloche from "../../../../Image/Icone/Cloche.png";
 
 export function FirstRow() {
+  let totalItems = 0;
+
+  const state = useSelector((state) => state.handleCart);
+  state.map((item) => {
+    return (totalItems += item.qty)
+  })
+
   return (
     <div className="d-flex align-items-center FirstRow">
       {/*The left part of Header*/}
@@ -25,15 +34,17 @@ export function FirstRow() {
         </div>
 
         <div>
-          <a href="/service-client">
+          <Link to="/service-client">
             <img src={Cloche} alt="Cloche" width="25px" height="25px" />
-          </a>
+          </Link>
         </div>
       </div>
 
       {/*The Center part of Header (Logo)*/}
       <div className="justify-content-center Center">
-        <img src={logo} width={"225px"} alt={"Joiallerie Madagascar"} />
+        <Link to="/">
+          <img src={logo} width={"225px"} alt={"Joiallerie Madagascar"} />
+        </Link>
       </div>
 
       {/*The Right part of Header*/}
@@ -45,14 +56,19 @@ export function FirstRow() {
           <p className="mb-0 w-105 fs-10">+20 22 673 75</p>
         </div>
         <div>
-          <a href="/user-profile">
-            <img src={Profile} alt="UserIcon" width={"20px"} height={"20px"} />
-          </a>
+          <Link to="/user-profile">
+            <img src={Profile} alt="UserIcon" width={"21px"} height={"21px"} />
+          </Link>
         </div>
         <div>
-          <a href="/user-Bag">
-            <img src={Bag} alt="UserIcon" width={"20px"} height={"20px"} />
-          </a>
+          <Link to="/user-Bag">
+            <>
+              <p className="position-absolute top-11  ml-5 translate-middle badge rounded-pill text-dark">
+                {totalItems}
+              </p>
+              <img src={Bag} alt="UserIcon" width={"21px"} height={"21px"} />
+            </>
+          </Link>
         </div>
       </div>
     </div>

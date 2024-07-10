@@ -1,4 +1,4 @@
-import React, {useState, useRef } from "react";
+import React, { useState, useRef } from "react";
 
 import { AddBoutton } from "./AddBoutton";
 
@@ -7,7 +7,7 @@ import PaginationGauche from "../../../Image/Icone/paginationVgauche.png";
 
 import "../../../CSS/MarketPlaceCard.css"
 
-export function Card({ Index, Image, FirstDescription, SecondDescription, ThirdDescription, Price }) {
+export function Card({ product, Index, Image, FirstDescription, SecondDescription, ThirdDescription, Price }) {
     const theScrollImages = useRef()
 
     const theLeftScroll = () => {
@@ -49,7 +49,7 @@ export function Card({ Index, Image, FirstDescription, SecondDescription, ThirdD
                 <li>{ThirdDescription}</li>
             </ul>
 
-            <AddBoutton ThePrice = {Price}/>
+            <AddBoutton Product={product} ThePrice={Price} />
         </div>
     );
 }

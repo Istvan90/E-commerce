@@ -9,6 +9,7 @@ import Tiffany from "../../Image/Dans la Partie vente/Tiffany.webp"
 
 export const MarketPlaceProduct = [
     {
+        id : 1,
         Image: RingToSell,
         FirstDescription: "Bague T1 Tiffani en or jaune",
         SecondDescription: "18 carats et diamants.",
@@ -16,6 +17,7 @@ export const MarketPlaceProduct = [
         Price: "5000 $"
     },
     {
+        id : 2,
         Image: BlueRing,
         FirstDescription: "Bague T2 Nova en or Blanc",
         SecondDescription: "13 carats ",
@@ -23,6 +25,7 @@ export const MarketPlaceProduct = [
         Price: "3500 $"
     },
     {
+        id : 3,
         Image: Doré,
         FirstDescription: "Bague Mille étoile en or jaune",
         SecondDescription: "15 carats.",
@@ -30,6 +33,7 @@ export const MarketPlaceProduct = [
         Price: "6000 $"
     },
     {
+        id : 4,
         Image: Diamanta,
         FirstDescription: "Bague Diamanta en or Blanc",
         SecondDescription: "18 carats et diamants.",
@@ -37,6 +41,7 @@ export const MarketPlaceProduct = [
         Price: "9000 $"
     },
     {
+        id : 5,
         Image: Bluey,
         FirstDescription: "Bague Bluey en Argent",
         SecondDescription: "20 carats.",
@@ -44,6 +49,7 @@ export const MarketPlaceProduct = [
         Price: "4500 $"
     },
     {
+        id : 6,
         Image: Redeye,
         FirstDescription: "Red eye en Argent et saphir",
         SecondDescription: "21 carats.",
@@ -51,6 +57,7 @@ export const MarketPlaceProduct = [
         Price: "4500 $"
     },
     {
+        id : 7,
         Image: CouronneRing,
         FirstDescription: "Couronne ring en or jaune ",
         SecondDescription: "18 carats.",
@@ -58,13 +65,15 @@ export const MarketPlaceProduct = [
         Price: "4500 $"
     },
     {
+        id : 8,
         Image: Tiffany,
         FirstDescription: "Bague Tiffany en or Blanc",
         SecondDescription: "14 carats.",
         ThirdDescription: "Largeur : 3.5 mm",
         Price: "4000 $"
-    },
+    }, 
     {
+        id : 9,
         Image: RingToSell,
         FirstDescription: "Bague T1 Tiffani en or jaune",
         SecondDescription: "18 carats et diamants.",
@@ -72,6 +81,7 @@ export const MarketPlaceProduct = [
         Price: "5000 $"
     },
     {
+        id : 10,
         Image: BlueRing,
         FirstDescription: "Bague T2 Nova en or Blanc",
         SecondDescription: "13 carats ",
@@ -79,6 +89,7 @@ export const MarketPlaceProduct = [
         Price: "3500 $"
     },
     {
+        id : 11,
         Image: Doré,
         FirstDescription: "Bague Mille étoile en or jaune",
         SecondDescription: "15 carats.",
@@ -86,6 +97,7 @@ export const MarketPlaceProduct = [
         Price: "6000 $"
     },
     {
+        id : 11,
         Image: Diamanta,
         FirstDescription: "Bague Diamanta en or Blanc",
         SecondDescription: "18 carats et diamants.",
@@ -93,6 +105,7 @@ export const MarketPlaceProduct = [
         Price: "9000 $"
     },
     {
+        id : 12,
         Image: Bluey,
         FirstDescription: "Bague Bluey en Argent",
         SecondDescription: "20 carats.",
@@ -100,6 +113,7 @@ export const MarketPlaceProduct = [
         Price: "4500 $"
     },
     {
+        id : 13,
         Image: Redeye,
         FirstDescription: "Red eye en Argent et saphir",
         SecondDescription: "21 carats.",
@@ -107,17 +121,11 @@ export const MarketPlaceProduct = [
         Price: "4500 $"
     },
     {
+        id : 14,
         Image: CouronneRing,
         FirstDescription: "Couronne ring en or jaune ",
         SecondDescription: "18 carats.",
         ThirdDescription: "Largeur : 2.5 mm",
         Price: "4500 $"
-    },
-    {
-        Image: Tiffany,
-        FirstDescription: "Bague Tiffany en or Blanc",
-        SecondDescription: "14 carats.",
-        ThirdDescription: "Largeur : 3.5 mm",
-        Price: "4000 $"
-    },
+    }
 ]

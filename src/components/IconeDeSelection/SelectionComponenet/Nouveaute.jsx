@@ -1,6 +1,7 @@
 import { Necklace } from "../../Acceuil/PresNecklace/NeckLace";
 
 import BagueImage from "../../../Image/Dans la Partie vente/tiffany-foreveralliance-36342315_973801_ED_M.webp"
+import { Link } from "react-router-dom";
 
 const BraceletImage = "https://www.celinni.com/24912-large_default/bracelet-riviere-diamants-noirs.jpg"
 const  MontreImage = "https://images.ocarat.com/254232-thickbox_default/divers-sixty-five-01-733-7707-4055-07-8-20-18-oris.jpg"
@@ -34,14 +35,14 @@ export function Nouveautes() {
                 {
                     Categorie.map(
                         CategorieList => (
-                            <a className="w-1/4 h-96 flex flex-col text-decoration-none text-black text-center" href="#">
+                            <Link className="w-1/4 h-96 flex flex-col text-decoration-none text-black text-center" to="/market-place">
                                 <img className="object-cover w-50 aling-items-center ml-auto mr-auto m-16"
                                     src={CategorieList.ImageCategorie}
                                     alt={CategorieList.NameCategorie} />
 
 
                                 <p>{CategorieList.NameCategorie}</p>
-                            </a>
+                            </Link>
                         )
                     )}
                 <div className="Categorie">

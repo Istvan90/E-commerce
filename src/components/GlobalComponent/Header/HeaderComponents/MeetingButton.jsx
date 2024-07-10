@@ -1,15 +1,22 @@
-import React from "react";
 
 /**
  * 
  * @param {string} Content
- * @param {string} <Link></Link>
+ * @param {string} Link 
  * @returns 
  */
 
+import React from "react";
+import { Link } from "react-router-dom";
+
 export function MeetingButton({ Content, Link }) {
     return (
-        <a href={Link} style={{ textDecoration: 'none' }}>
+        <a
+            href={Link}
+            style={
+                { textDecoration: 'none' }
+            }
+        >
             <button style={
                 {
                     width: "180px",
@@ -17,7 +24,7 @@ export function MeetingButton({ Content, Link }) {
                     color: "white",
                     backgroundColor: "black",
                     border: "none",
-                    fontSize : "13px",
+                    fontSize: "13px",
                 }
             }
             >

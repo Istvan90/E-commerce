@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import '../../../CSS/ByStyle.css'
 
@@ -21,11 +22,11 @@ function List({ Image, Name }) {
     return (
         <li>
             <img src={Image} alt={Name} />
-            <a href={`/${Name}`} className='text-decoration-none'>
+            <Link to={`/${Name}`} className='text-decoration-none'>
                 <p className="d-flex align-items-center justify-content-center">
                     {Name}
                 </p>
-            </a>
+            </Link>
         </li>
     );
 }

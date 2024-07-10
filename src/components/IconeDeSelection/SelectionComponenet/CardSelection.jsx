@@ -5,6 +5,8 @@ import Lana from "../../../Image/Bague (Nos selection)/lefkos-4-chocolat.png"
 import "../../../CSS/Selection.css"
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 export function ParSelection() {
     return (
         <div className="Collection">
@@ -46,9 +48,9 @@ function SelectionList({ SelectionImage, SelectionName, DetailSelection }) {
                     {DetailSelection}
                 </p>
 
-                <a href="/" className="text-black">
+                <Link to="/" className="text-black">
                     <p>En savoir plus </p>
-                </a>
+                </Link>
             </div>
         </div>
     );

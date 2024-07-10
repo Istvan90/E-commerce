@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function SecondRow() {
     const List = [
         "Bagues de fiancailles",
@@ -27,18 +29,20 @@ export function SecondRow() {
 export function TheList({ Title }) {
     return (
         <li key={Title}>
-            <a
-                href="/market-place"
-                id="style-2"
-                style={
-                    {
-                        fontSize: "13px",
-                        textTransform: "uppercase"
-                    }
-                }
+            <Link
+                to="/market-place"
             >
-                {Title}
-            </a>
+                <p id="style-2"
+                    style={
+                        {
+                            fontSize: "13px",
+                            textTransform: "uppercase"
+                        }
+                    }
+                >
+                    {Title}
+                </p>
+            </Link>
             <hr />
         </li>
     );
