@@ -33,7 +33,7 @@ const CollectionList = [
         Image: RingFive,
         CollectionName: "Highteen"
     },
-]
+] 
 
 export function Collection() {
     const scrollImages = useRef();
@@ -61,7 +61,7 @@ export function Collection() {
             <div className="TheCollection">
                 <img className="ButtonLeft" src={PaginationGauche} alt="Previous" onClick={leftScroll} />
 
-                <div className="Cards d-flex justify-content-center mt-5" ref={scrollImages}>
+                <div className="Cards d-flex justify-content-center gap-x-1" ref={scrollImages}>
                     {
                         CollectionList.map(
                             List => (

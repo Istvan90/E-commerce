@@ -9,7 +9,7 @@ footer {
 }
 
 .Column {
-    width: 190px;
+    width: 100%;
     margin-left: 44px;
 }
 
@@ -42,4 +42,30 @@ footer {
     border-top: 0px;
     border-right: 0px;
     border-left: 0px;
+}
+
+@media only screen and (max-width: 754px) {
+    footer {
+        flex-direction: column;
+        font-size: 1em;
+    }
+
+    .One {
+        order: 0;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .Column {
+        width: 40%;
+        margin: 0 auto;
+    } 
+
+    .Footerlist {
+        font-size: large;
+    }
+
+    .AddElectronique {
+        margin: 0 auto;
+    }
 }

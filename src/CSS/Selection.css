@@ -1,3 +1,17 @@
 .selection-name {
     font-family: 'lateef';
 }
+
+@media only screen and (max-width : 754px) {
+    .icone-selection-responsive {
+        flex-direction: column;        
+    }
+
+    .icone-selection-responsive .selection-details {
+        margin: 0 auto;
+    }
+}
+
+.mt-20 {
+    margin-top: 20%;
+}

@@ -51,7 +51,7 @@ export function GarrantieBar() {
             </div>
 
             <div className="Image">
-                <img src={PosterDesign} alt="Poster" />
+                <img src={PosterDesign} alt="Poster" className="w-100"/>
             </div>
         </div>
     );

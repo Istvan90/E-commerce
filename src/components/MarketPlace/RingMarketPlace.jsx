@@ -17,9 +17,26 @@ import ForMan from "../../Image/Dans la Partie vente/tiffany-co-schlumberger-bag
 import Diamanta from "../../Image/Dans la Partie vente/alliance-tiffany-setting-16083135_934442_ED_M.webp";
 import IceBlue from "../../Image/Dans la Partie vente/tiffany-foreveralliance-16028932_1020727_ED_M.webp";
 
-import { MarketPlaceProduct } from "./Product";
+import { MarketPlaceProduct } from "./Product"
+
+import { useEffect, useState } from "react"
+import axios from "axios"
 
 export function RingMarketPlace() {
+    const [product, setProduct] = useState([])
+
+    useEffect(() => {
+        const fetchProduct = async () => {
+            try {
+                const reponse = await axios.get("http://127.0.0.1:8000/product/products/api/");
+                setProduct(reponse.data)
+            } catch (error) {
+                console.error('Error fetching data: ', error);
+            }
+        }
+        fetchProduct()
+    }, [])
+
     return (
         <div className="body-container">
             <RingDemo Image={MyRing} />

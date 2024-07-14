@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export function Meeting() {
     return (
-        <div className="Meeting w-100 d-flex justify-content-center align-items-center flex-column gap-3"
+        <div className="meeting-responsive w-100 d-flex justify-content-center align-items-center flex-column gap-3"
 
             style={
                 { marginTop: "300px" }

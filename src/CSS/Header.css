@@ -1,7 +1,6 @@
 header {
     display: flex;
     flex-direction: column;
-    gap: 30px;
 }
 
 .fs-10 {
@@ -67,13 +66,28 @@ header .FirstRow .Center {
     width: 8%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 754px) {
     .FirstRow {
         flex-direction: column;
     }
 
     .Center {
         order: 1;
+    }
+
+    .HeaderIcon {
+        width: 50px;
+        height: auto;
+    }
+
+    .cart-counter {
+        top: 185px;
+        margin-left: 10px;
+    }
+
+    .Icon-responsive-gap {
+        display: flex;
+        gap: 15%;
     }
 
     .left,

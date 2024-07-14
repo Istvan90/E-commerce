@@ -55,20 +55,22 @@ export function FirstRow() {
         <div className="p-4 w-100">
           <p className="mb-0 w-105 fs-10">+20 22 673 75</p>
         </div>
-        <div>
-          <Link to="/user-profile">
-            <img src={Profile} alt="UserIcon" width={"21px"} height={"21px"} />
-          </Link>
-        </div>
-        <div>
-          <Link to="/user-Bag">
-            <>
-              <p className="position-absolute top-11  ml-5 translate-middle badge rounded-pill text-dark">
-                {totalItems}
-              </p>
-              <img src={Bag} alt="UserIcon" width={"21px"} height={"21px"} />
-            </>
-          </Link>
+        <div className="Icon-responsive-gap">
+          <div>
+            <Link to="/user-profile">
+              <img src={Profile} className="HeaderIcon" alt="UserIcon" width={"21px"} height={"21px"} />
+            </Link>
+          </div>
+          <div>
+            <Link to="/user-Bag">
+              <>
+                <p className="cart-counter position-absolute top-11  ml-5 translate-middle badge rounded-pill text-dark">
+                  {totalItems}
+                </p>
+                <img src={Bag} className="HeaderIcon" alt="UserIcon" width={"21px"} height={"21px"} />
+              </>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

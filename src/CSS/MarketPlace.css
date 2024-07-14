@@ -49,7 +49,7 @@ select {
     width: 20px;
 }
 
-#style-2 {
+.style-2 {
     position: relative;
     transition: color .3s ease-in-out;
 
@@ -90,4 +90,10 @@ option {
 li div {
     display: flex;
     align-items: center;
+}
+
+@media (max-width: 767px) {
+    .MyColumn {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

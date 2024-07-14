@@ -4,17 +4,26 @@ import RingCoteLeft from "../../Image/Left.webp"
 import RingCoteRight from "../../Image/Right.webp"
 
 import "../../CSS/DetailsProduits.css"
+import { useParams } from "react-router-dom"
+import { addCart } from "../../redux/action"
+import { useDispatch } from "react-redux"
+
+import { MarketPlaceProduct } from "../MarketPlace/Product"
 
 export function ListeProduits() {
+    const { id } = useParams()
+    const product = MarketPlaceProduct.find(p => p.id === parseInt(id))
+
     return (
         <>
             <div className="cover gap-20">
-                <Images Front={RingUp} Right={RingDown} Left={RingCoteLeft} Up={RingCoteRight} />
-                
+                <Images Front={product.Image} Right={product.Image} Left={product.Image} Up={product.Image} />
+
                 <Details
-                    Details={"Bagues de fiancailles True. Ornée d'un diamant taille brillant sur un anneau en platine 950 millimetres et diamants"}
-                    Prix={"2150 $"}
-                    Description={"Icone de l'amour moderne, la bague de fiancaille Nova présente une monture aux lignes graphiques. Composée d'un anneau raffiné en platine 950 millièmes..."}
+                    product={product}
+                    Details={product.Details}
+                    Prix={product.Price}
+                    Description={product.Description}
                 />
             </div>
         </>
@@ -32,7 +41,13 @@ function Images({ Front, Up, Left, Right }) {
     );
 }
 
-function Details({ Details, Prix, Description }) {
+function Details({ product, Details, Prix, Description }) {
+    const dispatch = useDispatch()
+
+    function AddProduct(product) {
+        dispatch(addCart(product))
+    }
+
     return (
         <div className="d-flex details">
             <p className="BigTitle">
@@ -43,7 +58,13 @@ function Details({ Details, Prix, Description }) {
                 Prix : {Prix}
             </p>
 
-            <button className="AddPannier">Ajouter au Pannier</button>
+            <button className="AddPannier"
+                onClick={() => {
+                    AddProduct(product)
+                }}
+            >
+                Ajouter au Pannier
+            </button>
 
             <button className="GetMeeting">Prendre rendez-vous</button>
 

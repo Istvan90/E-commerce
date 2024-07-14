@@ -18,7 +18,7 @@ export function Necklace() {
 
 function Details() {
     return (
-        <div className="d-flex justify-content-center align-items-center flex-column gap-5 DetailsNecklace">
+        <div className="details-necklace-responsive d-flex justify-content-center align-items-center flex-column gap-5 DetailsNecklace">
             <div className="d-flex justify-content-center align-items-center flex-column">
                 <h1>Baobab Necklace </h1>
                 <h1>2024 : </h1>

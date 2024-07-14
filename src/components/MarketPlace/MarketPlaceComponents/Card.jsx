@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 
 import { AddBoutton } from "./AddBoutton";
+import { Link } from "react-router-dom";
 
 import PaginationDroite from "../../../Image/Icone/paginationVdroite.png";
 import PaginationGauche from "../../../Image/Icone/paginationVgauche.png";
@@ -32,12 +33,13 @@ export function Card({ product, Index, Image, FirstDescription, SecondDescriptio
                 <img src={PaginationGauche} alt="PaginationGauche" className="PaginationLeft" onClick={theLeftScroll} />
 
                 <div className="BlackSquare">
-                    <div className="d-flex Defilement" ref={theScrollImages}>
-                        <img src={Image} className="ThisImage" />
-                        <img src={Image} className="ThisImage" />
-                        <img src={Image} className="ThisImage" />
-
-                    </div>
+                    <Link to={"/details-produits/" + product.id}>
+                        <div className="d-flex Defilement" ref={theScrollImages}>
+                            <img src={Image} className="ThisImage" />
+                            <img src={Image} className="ThisImage" />
+                            <img src={Image} className="ThisImage" />
+                        </div>
+                    </Link>
                 </div>
 
                 <img src={PaginationDroite} alt="PaginationDroite" className="PaginationRight" onClick={theRightScroll} />
@@ -50,6 +52,6 @@ export function Card({ product, Index, Image, FirstDescription, SecondDescriptio
             </ul>
 
             <AddBoutton Product={product} ThePrice={Price} />
-        </div>
+        </div >
     );
 }

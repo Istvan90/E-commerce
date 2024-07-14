@@ -20,3 +20,9 @@
 .font-lateef {
     font-family: "lateef";
 }
+
+@media only screen and (max-width : 754px) {
+    .details-necklace-responsive div h1 {
+        font-size: 150%;
+    }
+}

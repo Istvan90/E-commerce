@@ -14,7 +14,7 @@ export function ParSelection() {
                 Nos icones de selection
             </h1>
 
-            <div className="container container-centered Cover-Card-Selection flex gap-20">
+            <div className="icone-selection-responsive mt-20 container container-centered Cover-Card-Selection flex gap-20">
                 <SelectionList
                     SelectionName={"Harlequin"}
                     SelectionImage={Harlequin}
@@ -37,8 +37,8 @@ export function ParSelection() {
 
 function SelectionList({ SelectionImage, SelectionName, DetailSelection }) {
     return (
-        <div className="w-1/3 items-center flex flex-column text-center">
-            <img className="h-3/4 mb-5 selection-image" src={SelectionImage} alt="Harlequin" />
+        <div className="selection-details w-1/3 items-center flex flex-column text-center">
+            <img className="w-100 h-3/4 mb-5 object-fit-cover selection-image" src={SelectionImage} alt="Harlequin" />
             <div>
                 <h1 className="selection-name">
                     {SelectionName}

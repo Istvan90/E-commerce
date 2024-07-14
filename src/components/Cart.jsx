@@ -65,12 +65,15 @@ function ShowCart() {
                                 className="bg-image rounded"
                                 data-mdb-ripple-color="light"
                               >
-                                <img
-                                  src={item.Image}
-                                  // className="w-100"
-                                  alt={item.title}
-                                  width={100}
-                                  height={75} />
+                                <Link to={"/details-produits/" + item.id}>
+                                  <img
+                                    src={item.Image}
+                                    // className="w-100"
+                                    alt={item.title}
+                                    width={100}
+                                    height={75}
+                                  />
+                                </Link>
                               </div>
                             </div>
 
